@@ -1,0 +1,6 @@
+(library
+ (name cohttp_curl_lwt_tests)
+ (package cohttp-curl-lwt)
+ (inline_tests)
+ (preprocess
+  (pps ppx_expect)))

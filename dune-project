@@ -200,3 +200,15 @@ to have no dependencies and make it easy for other packages to easily
 interoperate with Cohttp.")
  (depends
   (ocaml (>= 4.08))))
+
+(package
+ (name cohttp-curl-lwt)
+ (synopsis "Cohttp client using Curl & Lwt as the backend")
+ (description "\
+An HTTP client that relies on Curl + Lwt for the backend. Does not require
+conduit for SSL.")
+ (depends
+  ocurl
+  stringext
+  lwt
+  (http (= :version))))
