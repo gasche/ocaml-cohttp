@@ -1,0 +1,10 @@
+(executable
+ (name curl)
+ (libraries
+  sexplib0
+  cohttp
+  cohttp_curl_async
+  async_unix
+  async_kernel
+  async.async_command
+  core_unix.command_unix))

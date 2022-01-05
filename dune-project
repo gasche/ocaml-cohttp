@@ -212,3 +212,17 @@ conduit for SSL.")
   stringext
   lwt
   (http (= :version))))
+
+(package
+ (name cohttp-curl-async)
+ (synopsis "Cohttp client using Curl & Async as the backend")
+ (description "\
+An HTTP client that relies on Curl + Async for the backend. Does not require
+conduit for SSL.")
+ (depends
+  ocurl
+  stringext
+  async_kernel
+  async_unix
+  async
+  (http (= :version))))
